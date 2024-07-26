@@ -20,15 +20,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -44,8 +44,9 @@
             <h1>Harold Suarez</h1>
             <h2>Desarrollador de software - Full Stack DV</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/harold-suarez-ab7075298/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/HaroldS10"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </section>
@@ -125,10 +126,12 @@
                     </div>
                 </div>
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+            <a href="files/Harold Suarez - CV - FullStack.pdf" download="Harold Suarez - CV - FullStack.pdf">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
         </div>
     </section>
 
@@ -176,7 +179,7 @@
                         <span>SQL & NoSQL</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>60%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -411,7 +414,7 @@
     </section>
 
     <!-- footer  -->
-     <footer>
+    <footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
@@ -419,7 +422,10 @@
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
-     </footer>
+    </footer>
+    <script src="script.js">
+
+    </script>
 </body>
 
 </html>

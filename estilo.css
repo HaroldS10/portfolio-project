@@ -6,7 +6,7 @@
     padding: 0;
 }
 html{
-    /* me permite deslizar cuando hago clic eb los links del menu*/
+    /* me permite deslizar cuando hago clic en los links del menu*/
     scroll-behavior: smooth;
 }
 /* MENU */
@@ -21,7 +21,7 @@ html{
 .contenedor-header header{
     max-width: 1100px;
     margin: auto;
-    display: 	flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
@@ -184,7 +184,7 @@ html{
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+.sobremi button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -196,8 +196,13 @@ html{
     color: #fff;
     position: relative;
     z-index: 10;
+    text-decoration: none;
 }
-.sobremi button .overlay{
+.sobremi a{
+    text-decoration: none;
+    color: #fff;
+}
+.sobremi button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -311,7 +316,7 @@ html{
 }
 @keyframes sql{
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 70%;}
 }
 .skills .skill .illustrator{
     width: 0%;
@@ -693,13 +698,13 @@ footer .arriba{
         position: absolute;
         right: 0;
         top: 75px;
-        border-color: #252A2E;
+        background-color: #252A2E;
         width: 180px;
     }
     nav.responsive ul{
         display: block !important;
     }
-    nav.reaponsive ul li{
+    nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
