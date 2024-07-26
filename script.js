@@ -45,3 +45,29 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 }
+
+//Enviar correo desde SECCION CONTACTO
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+
+    // Obtén los datos del formulario
+    var formData = {
+        from_name: document.getElementById('from_name').value,
+        telefono: document.getElementById('telefono').value,
+        email_id: document.getElementById('email_id').value,
+        tema: document.getElementById('tema').value,
+        message: document.getElementById('message').value
+    };
+
+    // Envía el correo utilizando EmailJS
+    emailjs.send('default_service', 'template_da0932h', formData)
+        .then(function(response) {
+            console.log('Correo enviado exitosamente!', response.status, response.text);
+            alert('Correo enviado exitosamente!');
+            document.getElementById('contact-form').reset();
+        }, function(error) {
+            console.log('Error al enviar el correo:', error);
+            alert('Error al enviar el correo. Por favor, intenta de nuevo.');
+        });
+});

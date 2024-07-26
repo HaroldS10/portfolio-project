@@ -379,15 +379,18 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form id="contact-form">
+                        <input type="text" name="from_name" id="from_name" placeholder="Tú nombre" required>
+                        <input type="text" name="telefono" id="telefono" placeholder="Número telefónico">
+                        <input type="text" name="email_id" id="email_id" placeholder="Dirección de correo" required>
+                        <input type="text" name="tema" id="tema" placeholder="Tema" required>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"
+                            required></textarea>
+                        <button type="submit" id="button">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
@@ -423,8 +426,12 @@
             <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
-    <script src="script.js">
-
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init('NtanWqtl0JmLBF1Kc');
+        })();
     </script>
 </body>
 
